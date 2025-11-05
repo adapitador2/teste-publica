@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+}
+
+
+.cabeçario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: lightcoral;
+    color: white;
+    padding: 30px;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.logotipo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navegação a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    margin: 0px 10px;
+}
+
+.navegação a:hover {
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+    color: lightgray;
+}
+
+.navegação a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 30px 0;
+}
+
+.produtos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px 40px 20px;
+    max-width: 1100px;
+}
+
+.box {
+    text-align: start;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    /*width: 30%;*/
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 2px;
+}
+
+.box h2 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+.box img {
+    width: 280px;
+}
+
+.box p {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 14px;
+    padding: 5px 0 20px 15px;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.carrinho {
+    padding: 5px 0 20px 5px;
+}
+
+.carrinho a {
+    background-color: lightskyblue;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.carrinho a:hover{
+    text-decoration: underline;
+    background-color: skyblue;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px;) {
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex end;
+}
+
+}
